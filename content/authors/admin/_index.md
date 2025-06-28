@@ -54,7 +54,7 @@ education:
     date_start: 2021-10-01
     date_end: 2025-06-01
     summary: |
-      GPA: 3.40/4.0
+      Graduated in 2025 with CGPA: 3.40/4.0
 
       Relevant Courses:
       - Machine Learning
@@ -130,7 +130,9 @@ awards:
     awarder: DeepLearning.AI (Stanford, Andrew Ng)
     date: '2023-09-01'
     icon: coursera
-    url: https://coursera.org
+    url: https://www.credly.com/badges/e5fd8552-dc16-4b68-9aa4-d72b14a88c45
+    summary: |
+      Completed 5-course specialization focused on deep learning foundations, CNNs, sequence models, and deployment strategies. View verified badge on Credly.
 
   - title: MLOps Specialization
     awarder: Duke University (Coursera)
@@ -147,6 +149,7 @@ awards:
 
 ## About Me
 
-I'm Muhammad Yousaf Rana, an AI/ML and MLOps Engineer based in Islamabad, currently studying Software Engineering at UET Taxila.
+I'm Muhammad Yousaf Rana, an AI/ML and MLOps Engineer based in Islamabad. I recently graduated with a degree in Software Engineering from UET Taxila.
 
 I specialize in designing scalable machine learning systems, deploying real-time inference APIs, and building MLOps pipelines with tools like FastAPI, Docker, AWS, and Hugging Face. I’m passionate about translating AI research into practical, impactful solutions and love exploring emerging areas in LLMs and audio-visual AI.
+
