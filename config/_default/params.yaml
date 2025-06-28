@@ -1,23 +1,22 @@
 # SITE SETUP
 # Guide: https://docs.hugoblox.com/tutorial/
 # Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
 appearance:
-  mode: system
-  color: emerald
+  mode: system  # or "light" / "dark"
+  color: emerald  # You can change to other Tailwind colors like "slate", "sky", etc.
 
 # SEO
 marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
+    org_name: 'InnovatorAI-Hub'
+    description: 'Portfolio of an AI/ML and MLOps Engineer. Showcasing projects, publications, and professional experience.'
+    twitter: 'https://x.com/MUHAMMADYO67186'  # Change or leave blank
   analytics:
-    google_analytics: ''
+    google_analytics: '11414046298'  # Add your GA ID if needed
     baidu_tongji: ''
     plausible: ''
     fathom: ''
@@ -35,17 +34,14 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "Your Name"
+      text: "MUHAMMAD YOUSAF RANA"  # Put your real name or brand here
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} MUHAMMAD YOUSAF RANA. All rights reserved.'
     license:
-      enable: true
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+      enable: false  # Turned off unless you want to show Creative Commons license
 
 # Localization
 locale:
@@ -55,6 +51,6 @@ locale:
 # Site features
 features:
   math:
-    enable: false
+    enable: false  # Enable later if you need LaTeX or math notation
   privacy_pack:
-    enable: false
+    enable: false  # Enable if GDPR tools are needed
