@@ -41,7 +41,9 @@ footer:
   copyright:
     notice: '© {year} MUHAMMAD YOUSAF RANA. All rights reserved.'
     license:
-      enable: false  # Turned off unless you want to show Creative Commons license
+      enable: false
+  disable_powered_by: true  # ← Add this line
+
 
 # Localization
 locale:
