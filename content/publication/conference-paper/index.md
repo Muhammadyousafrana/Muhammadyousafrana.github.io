@@ -5,6 +5,7 @@ title: 'Improved Sentence Classification For Medical Abstracts'
 authors:
   - admin
   - Muhammad Yousuf Rana
+  - Muhammad Hammad
 
 author_notes:
   - "Equal contribution"
