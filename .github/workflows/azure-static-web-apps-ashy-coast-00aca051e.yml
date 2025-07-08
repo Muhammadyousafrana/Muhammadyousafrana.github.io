@@ -18,9 +18,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           submodules: true
-      # ————————————————————————————————————————————————————————
-      #  Build your Hugo site _locally_ (on the runner) with a compatible version
-      #  by installing the latest extended Hugo, then running `hugo --minify`
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
@@ -30,18 +28,16 @@ jobs:
       - name: Build Hugo Site
         run: hugo --minify
 
-      # ————————————————————————————————————————————————————————
-      #  Upload the already‑built public/ folder and skip Oryx entirely
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ASHY_COAST_00ACA051E }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: upload
-          app_location: "/"            # source dir (doesn't matter once you've built)
-          api_location: ""             # no Azure Functions
-          output_location: "public"    # Hugo’s built output
-          skip_app_build: true         # ← key flag to prevent Oryx/Hugo v0.124.1 build
+          app_location: "public"        # ✅ final built static folder
+          skip_app_build: true          # ✅ disables Oryx/Hugo build on Azure
+          api_location: ""              # optional, empty if no Azure Functions
+
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
