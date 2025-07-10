@@ -1,5 +1,5 @@
 ---
-title: 'Improved Sentence Classification For Medical Abstracts'
+title: 'An Optimized Framework for Contextual Sentence Classification in Biomedical Abstracts'
 
 # Authors
 authors:
