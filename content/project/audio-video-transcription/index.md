@@ -1,7 +1,7 @@
 ---
 title: Audio & Video Transcription with Whisper V3
 date: 2025-01-10
-external_link: https://huggingface.co/spaces/MYousafRana/audio-video-transcription
+external_link: https://myousafrana-audio-video-transcription.hf.space/docs
 tags:
   - Whisper
   - ASR
